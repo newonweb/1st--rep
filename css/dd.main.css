@@ -1,0 +1,28 @@
+html, body {height:100%; width:100%;}
+body {font-family:'Titillium Web', Arial, Helvetica Neue, sans-serif;}
+header {
+  position:relative; min-height:auto;
+  background-image:url('../img/dd.hero.jpg');
+  background-position:center;
+  background-attachment:fixed;
+  -webkit-background-size:cover;
+    -moz-background-size:cover;
+      -o-background-size:cover;
+         background-size:cover;
+}
+header .header-content h1 {font-weight:100; margin:0;}
+header .header-content h1 span {font-weight:700; font-size:3rem;}
+@media (min-width:768px) {
+  header {min-height:100%;}
+  header .header-content {max-width:250px; padding:0; position:absolute; bottom:3%; right:3%; -webkit-transform:translateY(-50%); -ms-transform:translateY(-50%); transform:translateY(-50%);}
+  header .header-content h1 {color:rgba(255,255,255,0.15); font-size:2.2rem;}
+}
+@media (max-width:767px) {
+  header {height:100%;}
+  header .header-content {text-align:right !important; padding:0 !important; position:absolute !important; bottom:3% !important; right:6% !important;}
+  header .header-content h1 {margin:0 !important; font-size:1.4rem !important; font-weight:100 !important; color:rgba(255,255,255,0.35) !important;}
+  header .header-content h1 span {font-size:2.4rem !important; font-weight:700 !important;}
+}
+img::selection {color:white; background:transparent;}
+img::-moz-selection {color:white; background:transparent;}
+body {webkit-tap-highlight-color:#222222;}
